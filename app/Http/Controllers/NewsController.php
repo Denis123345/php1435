@@ -15,6 +15,7 @@ class NewsController extends Controller
     public function index()
     {
         $items = News::all();
+        dd($items);
 
         return view('news.index', compact('items'));
         //
@@ -49,7 +50,9 @@ class NewsController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = News::findOrFail($id);
+
+        return view('news.show', compact('item'));
     }
 
     /**
