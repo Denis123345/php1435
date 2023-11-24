@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::group(['namespaces'=>'App\Http\Controllers','prefix'=>''],function(){
-    Route::resource('news','NewsController')->names('news');
-});
+
+
+    Route::resource('news',NewsController::class)->names('news');
+
