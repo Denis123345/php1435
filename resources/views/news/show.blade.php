@@ -8,7 +8,8 @@
                     <div class="card-body">
                        <div class="row"> 
                           <div class="col-lg-4 col-md-4 col-sm-12">
-                             <p>{{ $item->published_at }}</p>  
+                            <div><img class="news__img" src="{{asset('/images/' . $item->image)}}" alt=""></div>
+                             <p><div class="text-center">{{ $item->published_at }}</div></p>  
                            </div>
                            <div class="col-lg-4 col-md-4 col-sm-12">
                              <h1 class="mt-2"><span class="text-justify">Название: </span>{{ $item->title }}</h1>
