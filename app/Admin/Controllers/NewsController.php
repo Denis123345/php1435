@@ -76,6 +76,7 @@ class NewsController extends AdminController
         $form->textarea('content', __('Content'));
         $form->switch('is_active', __('Is active'));
         $form->datetime('published_at', __('Published at'))->default(date('Y-m-d H:i:s'));
+        $form->image('image', __('image'));
 
         return $form;
     }
