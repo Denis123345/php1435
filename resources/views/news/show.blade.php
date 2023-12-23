@@ -8,7 +8,8 @@
                     <div class="card-body">
                        <div class="row"> 
                           <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div><img class="news__img" src="{{asset('/images/' . $item->image)}}" alt=""></div>
+                            <div><img class="news__img" src="{{asset('storage/' . $item->image)}}" alt=""></div>
+                            <div><img class="news__img" src="{{asset('storage/images' . $item->image)}}" alt=""></div>
                              <p><div class="text-center">{{ $item->published_at }}</div></p>  
                            </div>
                            <div class="col-lg-4 col-md-4 col-sm-12">
