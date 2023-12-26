@@ -24,6 +24,14 @@
         </div> 
       </div>
     </div>
+    @if($items->total() > $items->count())
+    <div class="col-md-12">
+    <div class="card-body"> 
+      <div class="card"> 
+      {{$items->links()}} </div>
+      </div>
+    </div>
+    @endif
   </div>
                 
 
